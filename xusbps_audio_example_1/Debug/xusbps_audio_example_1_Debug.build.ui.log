@@ -1,0 +1,25 @@
+2022-07-05T18:25:33.556406900255-18:25:33 **** Incremental Build of configuration Debug for project xusbps_audio_example_1 ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-'Building file: ../src/xusbps_ch9_audio.c'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xusbps_ch9_audio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/xilinx/cora/linuxbase/XADC/vitis_proj/test/export/test/sw/test/standalone_domain/bspinclude/include -MMD -MP -MF"src/xusbps_ch9_audio.d" -MT"src/xusbps_ch9_audio.o" -o "src/xusbps_ch9_audio.o" "../src/xusbps_ch9_audio.c"
+000-'Finished building: ../src/xusbps_ch9_audio.c'
+000-' '
+000-'Building target: xusbps_audio_example_1.elf'
+000-'Invoking: ARM v7 gcc linker'
+000-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/xilinx/cora/linuxbase/XADC/vitis_proj/test/export/test/sw/test/standalone_domain/bsplib/lib -o "xusbps_audio_example_1.elf"  ./src/xusbps_audio_example.o ./src/xusbps_ch9.o ./src/xusbps_ch9_audio.o ./src/xusbps_class_audio.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-'Finished building target: xusbps_audio_example_1.elf'
+000-' '
+000-'Invoking: ARM v7 Print Size'
+000-arm-none-eabi-size xusbps_audio_example_1.elf  |tee "xusbps_audio_example_1.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  64580	   4968	21146608	21216156	143bb9c	xusbps_audio_example_1.elf
+000-'Finished building: xusbps_audio_example_1.elf.size'
+000-' '
+00255-
+18:25:34 Build Finished (took 1s.115ms)
+
